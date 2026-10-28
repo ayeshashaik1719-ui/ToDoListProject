@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0207)file:///C:/Users/AYESHA/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/LocalState/sessions/83655D7DEF7064059A92E3FC16F2C3D428091350/transfers/2026-44/ToDoListProject/ToDoListProject/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="./My To-Do List_files/style.css">
+  <script src="./My To-Do List_files/script.js" defer=""></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">✓</div>
+      <h1>My To-Do List</h1>
+      <p>Plan your day, one task at a time.</p>
+    </header>
+
+    <form id="task-form" class="task-form">
+      <input id="task-input" type="text" maxlength="200" placeholder="What do you need to do?" aria-label="New task" required="">
+      <button class="primary" type="submit">+ Add Task</button>
+    </form>
+    <p id="message" class="message" role="status"></p>
+
+    <section class="summary" aria-label="Task summary">
+      <div class="summary-card"><strong id="total-count">0</strong><span>Total</span></div>
+      <div class="summary-card"><strong id="pending-count">0</strong><span>Pending</span></div>
+      <div class="summary-card"><strong id="completed-count">0</strong><span>Completed</span></div>
+    </section>
+
+    <nav class="filters" aria-label="Filter tasks">
+      <button type="button" class="filter active" data-filter="all">All</button>
+      <button type="button" class="filter" data-filter="pending">Pending</button>
+      <button type="button" class="filter" data-filter="completed">Completed</button>
+    </nav>
+
+    <ul id="task-list" class="task-list" hidden=""></ul>
+    <div id="empty-state" class="empty-state">
+      <div class="empty-icon">📝</div>
+      <h2>No tasks yet!</h2>
+      <p>Add your first task to get started.</p>
+    </div>
+
+    <footer class="footer">
+      <button id="clear-completed" class="clear-button" type="button">Clear completed tasks</button>
+      <p>Your tasks are saved in this browser.</p>
+    </footer>
+  </main>
+
+
+</body></html>
